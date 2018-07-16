@@ -16,6 +16,10 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+
+	}
+	html::-webkit-scrollbar {
+		display: none;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2729,7 +2733,7 @@
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
 			left: 50%;
-			margin-left: -17.5em;
+			margin-left: -32.5em;
 			padding: 2.5em;
 			position: absolute;
 		}
@@ -2867,6 +2871,7 @@
 
 /* Small */
 
+
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
@@ -2901,8 +2906,8 @@
 
 				#header header {
 					padding-bottom: 0;
-					width: 55%;
-					margin-top: 80px;
+					width: 30%;
+					margin-top: 30px;
 				}
 
 					#header header h1 {
@@ -2928,6 +2933,7 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+		
 
 		/* Basic */
 
@@ -3031,7 +3037,13 @@
 					margin: 0;
 					padding: 0;
 				}
-
+				
+					#header header {
+						padding-bottom: 0;
+						width: 55%;
+						margin-top: 80px;
+					}
+				
 	}
    /* */
 	
@@ -3044,3 +3056,111 @@
 		right: 0;
 		overflow: hidden;
 	}
+
+.who-container {
+	display: flex;
+	flex-basis: auto;
+}
+
+/* .who-container  div {
+	flex: 1
+} */
+
+.who-flex {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto
+}
+
+.who-flex-a {
+	flex: 1;
+}
+
+.heliom {
+	flex: 1;
+}
+
+.avatar-container {
+	padding-top: 10px;
+	display: flex;
+}
+.avatar-container1 {
+	padding-top: 10px;
+	display: flex;
+}
+.avatar{
+	display: flex;
+	flex: 1;
+}
+.avatar-hub {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.avatar-profile {
+	flex:1
+}
+
+.portfolio-pic {
+	border-radius: 50%;
+	width: 64px;
+	height:64px;
+}
+
+@media screen and (max-width: 736px) {
+	.avatar-container {
+		flex-direction: column;
+	}
+	.avatar-container1 {
+		flex-direction: column;
+	}
+}
+
+/*  */
+@media screen and (min-width: 720px) {
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	  }
+	.cell {
+	  width: calc(50% - 32px);
+	}
+  }
+  
+  @media screen and (min-width: 960px) {
+	.cell {
+	  width: calc(33.3333% - 32px);
+	}
+  }
+
+  .cell {
+	margin: 16px;
+  }
+
+  .responsive-image {
+	max-width: 100%;
+  }
+
+  .cell img {
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px 2px;
+  }
+
+  .portfolio-container {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0 16px;
+  }
+
+  div.polaroid{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	opacity: .5;
+  }
+  div.polaroid:hover{
+    opacity: 1.0;
+  }
